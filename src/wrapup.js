@@ -23,7 +23,7 @@ function initBrowser(catiline){
 
 }
 
-if(typeof define === 'function'){
+if(typeof define === 'function' && define.length === 1){
 	define(function(require){
 		catiline.SHIM_WORKER_PATH=require.toUrl('./catiline.js');
 		return catiline;
